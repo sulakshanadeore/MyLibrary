@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SchoolMgtApp.SecondMain</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MyLibrary">
       <HintPath>..\MyLibrary\bin\Debug\MyLibrary.dll</HintPath>
@@ -46,8 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maths.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

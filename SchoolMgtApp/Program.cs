@@ -25,14 +25,18 @@ namespace SchoolMgtApp
             {
                 case 1:
                     //Delegate is event handler
-                    Operations opAdd = new Operations(m.Add);//m.add is called method that is executed when the delegate recieves a call using opAdd is delegate object
-                    DoCalculation += opAdd;//DoCalculation is event
+                    //Operations opAdd = new Operations(m.Add);//m.add is called method that is executed when the delegate recieves a call using opAdd is delegate object
+                    //DoCalculation += opAdd;//DoCalculation is event
+
+                    DoCalculation += new Operations(m.Add);
+
 
                     int addans = DoCalculation(fno, sno);
                     //When event fires the delegates gives a call to the handler of the event which is method.
                     Console.WriteLine(addans);
                     break;
 
+                    //Unicast Delegate----> one method is passed to the delegate object
                 case 2:
                     Operations opSub = new Operations(m.Sub);
                     DoCalculation += opSub;
