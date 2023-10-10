@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
+    public delegate void NewTeacher(string tname, string subname);
     public class Teacher
     {
         public Teacher()
@@ -31,6 +32,13 @@ namespace MyLibrary
         {
             Console.WriteLine( "Default constructor of senior teacher");
         }
+        public void TeacherDetails(string tname, string subname)
+        {
+            Tname = tname;
+            Sname = subname;
+
+        }
+
 
         public string Tname { get; set; }
         public string Sname { get; set; }
